@@ -1,9 +1,9 @@
-#criar um program aque ao ler um numero quebrado (ex: 6.13652) mostre sua porção inteira (ex: 6)
+#Crie um programa que lê um número real qualquer e mostre sua porção inteira ex: 6.7263 parte inteira: 6
 import math
-num = float(input('Digite um numero: '))
-a = math.trunc(num)
-print('O numero arredondado de {} é {}.'.format(num, math.floor(num)))
-# poderia ser usado a variável com o math.floor(num) ou math.trunc ao invés de tacar no format
-# poderia só importar os métodos trunc ou floor
-# poderia ser usado int(num) que int é inteiro e corta os valores após o ponto
+nq = float(input('Digite um número qualquer: '))
+ni = math.trunc(nq)
+ni2 = math.floor(nq)
+print('O numero dado foi {} e sua porção inteira é {}.'.format(nq, ni2))
+#pode ser usado as variáveis ni ou ni2, bem como já aplicar elas direto no .format()
+#o ni2 pode ser usado pois arredonda o número para baixo
 
