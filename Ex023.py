@@ -1,0 +1,1 @@
+#Ler um n° de 0 a 9999 e mostrar cada digito separado, digito de milhar, centena, dezena e unidade
