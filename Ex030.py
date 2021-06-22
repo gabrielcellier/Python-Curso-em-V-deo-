@@ -1,0 +1,1 @@
+#Ler um número dado e avisar se ele é par ou ímpar
