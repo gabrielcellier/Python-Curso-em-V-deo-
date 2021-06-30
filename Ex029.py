@@ -1,10 +1,8 @@
 #Escreva a velocidade do carro, se for acima de 80km/h deverá tomar multa de valor R$7 pra cada km/h a mais
-vel = int(input('Qual a velocidade do carro (em km/h): '))
-multa = (vel - 80)
-print ('Velocidade acima de 80 km/h está sujeito a multa no valor de R$7,00 para cada km/h excedente.')
+vel = int(input('Qual a velocidade do carro: '))
+multa = vel - 80
 if multa >=1:
-    print ('A multa será de R${:.2f}, pois a velocidade registrada de {} km/h excedeu o limite de 80 km/h'
-           .format(multa * 7, vel))
+    print ('Devido a velocidade {} o motorista pagará multa de R${:.2f}'.format(vel, multa * 7))
 else:
-    print ('O carro está dentro dos limites de velocidade.')
-#poderia fazer if vel >=81 também. Assim como fazer o cálculo direto (vel-80)*7 e não a variável 'multa'
+    print ('O motorista está dentro da velocidade permitida.')
+#poderia fazer o cálculo direto no .format((vel - 80) * 7) com if vel > 80

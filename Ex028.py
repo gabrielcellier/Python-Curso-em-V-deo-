@@ -1,11 +1,12 @@
 #Computador sorteia um numero de 0 a 5 e a pessoa tenta descobrir qual é. Avisar se acertou ou errou
 import random
-num = int(input('Tente adivinhar o número de 0 a 5 que o computador irá sortear: '))
+num = int(input('Digite um número de 0 a 5: '))
+sorteio = random.randint(0, 5)
 lista = [0, 1, 2, 3, 4, 5]
-sorteio = random.choice(lista)
-#sorteio1 = random.randint(0, 5)
-if sorteio == num:
-    print ('Parabéns! O número digitado foi {} e o sorteado foi {}.'.format(num, sorteio))
+sorteio2 = random.choice(lista)
+if sorteio2 == num:
+    print ('Parabéns! O numero digitado foi {} e o sorteado foi {}'.format(num, sorteio2))
 else:
-    print ('Infelizmente você errou pois o número digitado foi {} e o sorteado foi {}'.format(num, sorteio))
-#o sorteio pode ser feito pelo .choice() a partir de uma lista ou .randint(x,y) nos intervalos x a y
+    print ('Você errou! O numero digitado foi {} e o sorteado foi {}'.format(num, sorteio2))
+#pode ser feito pelo .randint (sorteio) ou criando lista e escolhendo dela .choice(lista)
+
