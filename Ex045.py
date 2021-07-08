@@ -12,4 +12,4 @@ elif jogador == 'tesoura' and escolha == 'papel':
 elif jogador == 'papel' and escolha == 'pedra':
     input ('O jogador ganhou do computador, pois escolheu papel e o computador escolheu pedra.')
 else:
-    input ('O computador ganhou, pois escolheu {} e o jogador escolheu {}.'.format(escolha, jogador))
+    input ('O computador ganhou, pois escolheu {} e o jogador escolheu {}.'.format(escolha, jogador ))

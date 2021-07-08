@@ -1,5 +1,5 @@
 #ler 2 números inteiros e comparar eles, dando mensagem se primeiro for maior, se segundo for maior e
-# se os 2 forem iguais
+# se os 2 forem iguais.
 n1 = int(input('Digite um número inteiro: '))
 n2 = int(input('Digite outro número inteiro: '))
 

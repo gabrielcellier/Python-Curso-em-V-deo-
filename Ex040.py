@@ -8,3 +8,4 @@ elif media < 5:
     input ('O aluno obteve média {}, sendo \033[1mreprovado\033[m na matéria.'.format(media))
 else:
     input ('O aluno obteve média {}, ficando em \033[mrecuperação\033[m na matéria.'.format(media))
+#poderia usar  7 > media >= 5 para definir o intervalo

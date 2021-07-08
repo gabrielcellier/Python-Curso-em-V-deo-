@@ -11,3 +11,4 @@ if prestacao >= (salario * 0.30):
 else:
     input ('Como a prestação no valor de R${:.2f} é menor que 30% do salário de R$ {} '
            'o empréstimo será \033[1maceito\033[m'.format(prestacao, salario))
+#
