@@ -1,8 +1,11 @@
 #crie um programa pro computador jogar pedra, papel e tesoura com você.
 from random import choice
+from time import sleep
 jogador = str(input('Escolha pedra, papel ou tesoura: ')).strip().lower()
 computador = ['pedra', 'papel', 'tesoura']
 escolha = choice(computador)
+print ('Esperando jogada do computador')
+sleep(1)
 if jogador == escolha:
     print ('Deu empate! pois ambos escolheram {}.'.format(jogador, escolha))
 elif jogador == 'pedra' and escolha == 'tesoura':
