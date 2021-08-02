@@ -1,11 +1,12 @@
-#ler duas notas, calcular a média e se for aciam de 7 tá aprovado, entre 5-6.9 recuperação e abaixo de 5 reprovado
-n1 = float(input('Digite a primeira nota da matéria: '))
-n2 = float(input('Digite a segunda nota da matéria: '))
+#ler duas notas, calcular a média e se for aciam de 7 tá aprovado,
+# entre 5-6.9 recuperação e abaixo de 5 reprovado
+n1 = float(input('Digite a primeira nota: '))
+n2 = float(input('Digite a segunda nota: '))
 media = (n1 + n2) / 2
-if media >= 7:
-    input ('O aluno obteve média {}, sendo \033[1maprovado\033[m na matéria.'.format(media))
+if media > 7:
+    print ('A média foi de {:.2f}, logo o aluno foi aprovado!'.format(media))
 elif media < 5:
-    input ('O aluno obteve média {}, sendo \033[1mreprovado\033[m na matéria.'.format(media))
+    print ('A média foi de {:.2f}, logo o aluno foi reprovado!'.format(media))
 else:
-    input ('O aluno obteve média {}, ficando em \033[mrecuperação\033[m na matéria.'.format(media))
-#poderia usar  7 > media >= 5 para definir o intervalo
+    print ('A média foi de {:.2f}, logo o aluno está em recuperação!'.format(media))
+
