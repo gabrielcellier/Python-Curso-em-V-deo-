@@ -5,5 +5,5 @@ for c in range (1, 501, 2):
     if c % 3 == 0:
         soma += c #ou soma = soma + c
         cont += 1 #ou cont = cont + 1
-print ('A soma entre todos os números ímpares multiplos de 3 entre 1 e 500 é: {}.'.format(soma))
-print ('O total de números ímpares múltiplos de 3 é de {}.'.format(cont))
+print ('A soma entre todos os números ímpares e multiplos de 3 entre 1 e 500 é: {}.'.format(soma))
+print ('O total de números ímpares e múltiplos de 3 é de {}.'.format(cont))
