@@ -8,5 +8,5 @@ if tot == 2:
     print ('O número {} é divisível apenas 2x, logo é um número primo.'.format(c))
 else:
     print ('O número {} é divisível mais de 2x logo não é número primo.'.format(c))
-#'range (1, n+1)' faz com que a condição 'n % c == 0' seja checada em todos os números de 1 até o número digitado
+#'range (1, n+1)' faz com que a condição 'n % c == 0' seja checada de 1 até o número digitado
 #tot soma o tanto de vezes que a condição 'n % c == 0' é verdadeira, se for só duas o N é primo

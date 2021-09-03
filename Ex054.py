@@ -2,11 +2,12 @@
 from datetime import date
 maior = 0
 menor = 0
-atual = date.today().year
-for idade in range (0,7):
-    ano = int(input('Digite o ano de nascimento: '))
-    if atual - ano >= 18:
-        maior = maior + 1
-    elif atual - ano < 18:
-        menor = menor + 1
-print ('Do total de anos lidos, {} são maiores de idade e {} menores.'.format(maior, menor))
+hoje = date.today().year
+for i in range (1, 8):
+    ano = int(input('Digite o ano de nascimento da pessoa: '))
+    idade = hoje - ano
+    if idade >= 18:
+        maior += 1
+    else:
+        menor += 1
+print ('Das idades informadas {} são maiores de idade e {} são menores.'.format(maior, menor))
