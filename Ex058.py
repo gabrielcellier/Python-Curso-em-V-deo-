@@ -8,5 +8,5 @@ n = int(input('Qual número entre 0 a 10 que eu estou pensando? '))
 while n != sorteio:
     n = int(input('Errou! Digite outro número de 0 a 10 que estou pensando: '))
     tentativa += 1
-print ('Finalmente! O número que pensei foi o {}. Você tentou {} vezes até '
-       'conseguir acertar.'.format(sorteio, tentativa))
+print ('Acertou! O número que pensei foi o {}. Você tentou {} vezes até conseguir acertar.'
+       .format(sorteio, tentativa))
