@@ -7,8 +7,6 @@ while c > 0:
     c -= 1
 print ('fatorial de {} é {}'.format(n, f))
 
-#pode ser resolvido usando 'from math import factorial' e usar factorial(x) sendo x o número do fatorial
-#from math import factorial
-#n = int(input('Digite o número para calcularmos o seu fatorial: '))
-#f = factorial(n)
-#print ('Fatorial de {} é {}'.format(n, f)
+#a) nesse modo enquanto C for maior que 0, ele será multiplicado por ele mesmo - 1
+#isso irá ocorrer até que o próprio valor do c chegue a 0
+#obs: fatorial pode ser resolvido usando 'factorial()' da biblioteca math.
