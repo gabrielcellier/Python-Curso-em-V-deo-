@@ -19,3 +19,5 @@ while continuar != 'n':
       num = int(input('Digite um novo número: '))
 print ('O maior número digitado foi: {}, o menor: {}, a média dos valores: {:.2f}.'
        .format(maior, menor, (soma / numeros)))
+
+#1) poderia fazer um valor de 's' e deixar o while continuar in 'Ss', isso tiraria necessidade do .lower()
