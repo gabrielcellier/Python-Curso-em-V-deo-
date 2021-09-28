@@ -9,4 +9,4 @@ while True:
         break
     qt += 1
     s += n
-print (f'Ao todo foram digitados {qt} números, somando {s} no total.')
+print(f'Ao todo foram digitados {qt} números, no total somando {s}.')
