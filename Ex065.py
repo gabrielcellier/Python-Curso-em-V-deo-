@@ -21,3 +21,4 @@ print ('O maior número digitado foi: {}, o menor: {}, a média dos valores: {:.
        .format(maior, menor, (soma / numeros)))
 
 #1) poderia fazer um valor de 's' e deixar o while continuar in 'Ss', isso tiraria necessidade do .lower()
+#2) poderia definir valor de 'maior' e 'menor' quando soma == 1, ou seja, no primeiro valor colocado
