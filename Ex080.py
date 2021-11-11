@@ -1,0 +1,1 @@
+#Digitar 5 numeros e colocar na lista na posição correta crescente sem usar sort(). Ao fim mostrar a lista na ordem.

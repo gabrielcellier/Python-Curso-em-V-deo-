@@ -1,0 +1,1 @@
+#Ler numeros e colocar na lista. Mostrar a) qt de numeros digitados, b) Lista em ordem decrescente e c) Se valor '5' foi digitado

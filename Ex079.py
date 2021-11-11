@@ -1,0 +1,2 @@
+#Usuário pode digitar vários números e eles entram numa lista. Caso já tenha sido digitado ignorar o numero.
+#Perguntar se quer continuar. No final mostrar todos os valores únicos digitados em ordem crescente.

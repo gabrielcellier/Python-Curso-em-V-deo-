@@ -1,0 +1,1 @@
+#Perguntar numeros. No fim criar 3 listas: com só n pares, ímpares e a lista toda
