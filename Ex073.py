@@ -4,16 +4,15 @@ from time import sleep
 tabela = ('Atletico MG', 'Palmeiras', 'Flamengo', 'Fortaleza', 'Bragantino', 'Corinthians',
           'Internacional', 'Fluminense', 'Atletico PR', 'Atletico GO', 'Cuiabá', 'Ceará',
           'São Paulo', 'América MG', 'Juventude', 'Santos', 'Bahia', 'Grêmio', 'Sport', 'Chapecoense')
-
-print ('A seguir a classificação atual do Brasileirão 2021.')
+print ('A seguir a tabela do Brasileirão 2021!')
+sleep(0.3)
 print (tabela)
-sleep(0.3)
-print (f'Os 5 primeiros colocados são: {tabela [0:6]}')
-sleep(0.3)
-print (f'Os 4 últimos colocados são: {tabela [-4:]}')
-sleep(0.3)
-print (f'Os times arrumados em ordem alfabética: {sorted(tabela)}')
-sleep(0.3)
-print (f'A Chapecoense esta atualmente na {tabela.index("Chapecoense") + 1}° posição..')
-#no tabela.index("chapecoense") usar aspas diferentes do usado no print()
-#no caso no print usamos (' ') então no .index() usamos ""
+sleep(0.5)
+print (f'Os primeiros cinco colocados atualmente são {tabela[0:5]}')
+sleep(0.5)
+print (f'Os quatro últimos colocados atualmente são {tabela [-4:]}')
+sleep(0.5)
+print (f'A tabela dos times em ordem alfabética é: {sorted(tabela)}')
+sleep(0.5)
+print (f'O Chapecoense se encontra atualmente na {tabela.index("Chapecoense") + 1}° Posição na tabela.')
+#como usamos '' no print(), no .index() usamos o " ".

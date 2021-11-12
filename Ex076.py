@@ -9,9 +9,10 @@ lista = ('Cerveja', 20,
          'Maionese', 18.90)
 print ('----' * 9)
 for pos in range (0, len(lista)):
-    if pos % 2 == 0:   #como o primeiro, terceiro, quinto etc itens são os nomes, puxamos eles a esquerda
-        print(f'{lista[pos]:.<30}', end='')
-    if pos % 2 == 1:   #como o segundo, quarto etc items são os preços, eles vão a direita
+    if pos % 2 == 0:   #os items pares da lista são todos nomes, logo essa condição é pra eles
+        print(f'{lista[pos]:.<30}', end='') #joga . até completar 30 espaços pra direita
+    if pos % 2 == 1:
         print(f'R${lista[pos]:>5.2f}')
+
 ('----' * 9)
 #ver anotações no caderno.
