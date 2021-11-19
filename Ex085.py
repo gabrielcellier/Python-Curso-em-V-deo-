@@ -1,0 +1,1 @@
+#Escrever 7 números. Dentro da lista já separar os pares e ímpares. No fim mostrar esses valores em ordem crescente.

@@ -1,0 +1,1 @@
+#Pegue a matriz do ex anterior. Mostrar: a) Soma dos n pares, B) Soma dos n da 3° coluna, C) Maior n da 2° linha
