@@ -23,3 +23,4 @@ while True:
     if cont in 'n':
         break
 print('Programa encerrado.')
+#como eram dados únicos não precisava adicionar multiplos dicionários a uma lista, por exemplo.
