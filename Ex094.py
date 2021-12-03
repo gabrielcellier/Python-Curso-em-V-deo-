@@ -1,0 +1,2 @@
+#Ler nome, sexo e idade. No final juntar tudo em uma única lista. Mostrar: A) Total de pessoas
+#B) Média de idade, C) Lista com todas as mulheres, D)Lista com todas as pessoas com idade acima da média.
