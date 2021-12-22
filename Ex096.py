@@ -1,0 +1,1 @@
+#Criar função 'area()' que recebe dimensões de um terreno (largura e comprimento) e mostra a área.

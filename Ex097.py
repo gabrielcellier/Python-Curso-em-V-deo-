@@ -1,0 +1,1 @@
+#Ter função 'escreva()' pra texto. Mostrar ela com barras (~~~) adaptada pro tamanho pra frase digitada
