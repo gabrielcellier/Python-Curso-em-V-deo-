@@ -1,13 +1,15 @@
 #Criar função 'area()' que recebe dimensões de um terreno (largura e comprimento) e mostra a área.
+from time import sleep
 def area(a, b):
-    print('~*~' * 10)
-    print(f'O terreno tem {l:.2f} x {c:.2f}')
-    a = l * c
-    print(f'Á área total do terreno é de {a:.2f} metros.')
-    print('~*~' * 10)
+    print('~*~' * 14)
+    print(f'O terreno tem as dimensões de {a:.2f} m x {b:.2f} m.')
+    area = a * b
+    sleep(0.8)
+    print(f'A área total do terreno é de {area:.2f} m².')
+    print('~*~' * 14)
 
-print('Calculadora de Terreno. Digite a seguir as dimensões do terreno.')
-l = float(input('Digite a largura do terreno (em metros): '))
-c = float(input('Digite o comprimento do terreno (em metros): '))
-
+print('Vamos calcular a área total do terreno, digite os valores de comprimento e largura.')
+c = float(input('Digite o comprimento total do terreno (em metros): '))
+l = float(input('Digite a largura total do terreno (em metros): '))
 area(l, c)
+
