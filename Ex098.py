@@ -27,7 +27,7 @@ print('---' * 8)
 print ('Contador de 10 a 0 (2 em 2):')
 contador(10, 0, 2)
 print('---' * 8)
-print('Informe agora a sua sequência, informado o valor inicial, o final e o intervalo de progressão')
+print('Informe agora a sua sequência, informando o valor inicial, final e o intervalo de progressão')
 contador(int(input('Digite o valor inicial: ')),
          int(input('Digite o valor final: ')),
          int(input('Digite o intervalo de progressão da sua sequência: ')))
