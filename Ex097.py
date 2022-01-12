@@ -5,5 +5,6 @@ def escreva(texto):
     print(f'{texto}')
     print('~' * a)
 
-escreva('oioioioioi')
+x = str(input('Digite um texto aqui: ')).strip()
+escreva(x)
 
