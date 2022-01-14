@@ -1,0 +1,2 @@
+#Função ficha() recebendo nome e gols de um jogador. Criar uma frase falando que jogador fez x gols.
+#Se não receber nenhum parametro seja nome ou gols, ainda sim criar frase com 'desconhecido' p/ nome e 0 p/ gols.

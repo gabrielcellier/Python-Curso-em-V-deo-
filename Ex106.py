@@ -1,0 +1,1 @@
+#Fazer mini-sistema do Interactive Help. O usuário digitará o comando e aparecerá o manual. Se digitar 'fim' se encerra.

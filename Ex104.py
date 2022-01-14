@@ -1,0 +1,1 @@
+#Função leiaint() para receber valor númerico. Enquanto não receber INT dará erro.
