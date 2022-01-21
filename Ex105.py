@@ -10,7 +10,7 @@ def notas(*n, sit=False):
     :return: Retornaremos uma lista com as notas e as informações extraídas delas.
     """
     dici = {}
-    dici['total das notas'] = len(n)
+    dici['total de notas'] = len(n)
     dici['maior nota'] = max(n)
     dici['menor nota'] = min(n)
     dici['média das notas'] = sum(n)/len(n)
@@ -21,8 +21,9 @@ def notas(*n, sit=False):
             dici['situação'] = 'Média (média entre 5 e 7)'
         if dici['média das notas'] < 5:
             dici['situação'] ='Ruim (média abaixo de 5)'
-    print(dici)
+    return dici
 
 resposta = notas(8, 10, 8, 3, sit=True)
+print(resposta)
 
 
