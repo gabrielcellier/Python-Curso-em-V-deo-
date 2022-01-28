@@ -1,29 +1,25 @@
-#Criar função fatorial() que recebe o número e o show, que se sim mostra como foi feita a conta.
-#Além disso criar um docstring explicando como funciona a função fatorial.
 def fatorial(num, show=False):
     """
-    A função fatorial irá calcular o fatorial do número escolhido pelo usuário.
-    :param num: Número escolhido pelo usuário.
-    :param show: Se verdadeiro, mostrará como o cálculo do número foi efetuado.
+    Função fatorial() irá calcular o fatorial no número colocado pelo usuário.
+    :param num: O número inteiro colocado pelo usuário.
+    :param show: Se colocado True, será mostrado o cálculo fatorial feito no num.
     :return:
     """
-    from math import factorial
     from time import sleep
-    calculo = factorial(num)
-    print(f'O cálculo do fatorial de {num} é {calculo}')
+    from math import factorial
+    n = factorial(num)
+    print(f'O fatorial de {num} é {n}.')
     sleep(1)
     if show:
         for c in range(num, 0, -1):
-            print(f'{c}', end='')
+            print(c, end='')
             if c > 1:
                 print(' x ', end='')
-            else:
+            elif c == 1:
                 print(' = ', end='')
+                print(n)
 
-num = int(input('Qual número você quer calcular o fatorial? '))
-show = str(input(f'Você deseja ver o cálculo do fatorial de {num} (s = sim, n = não): ').lower().strip()[0]
-if show in 's':
-    show=True
-if show in 'n':
-    show=False
+
+num = int(input('Digite o número para cálculo de seu fatorial: '))
+show = bool(input('Digite True se deseja ver o cálculo e False se não deseja: '))
 fatorial(num, show)
