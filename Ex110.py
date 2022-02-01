@@ -1,0 +1,1 @@
+#Add no módulo moeda.py a função resumo(), mostrando informações geradas pelas funções já criadas até aqui.
