@@ -8,3 +8,8 @@ print(f'{moeda108.moeda(moeda108.metade(n))}.')
 print(f'{moeda108.moeda(moeda108.aumentar(n, ta))}.')
 print(f'{moeda108.moeda(moeda108.diminuir(n, td))}.')
 print('---------')
+
+#1) O uso do moeda108.moeda() antes das outras funções é para aplicar sua funcionalidade dentro das funções, ou seja,
+#aplicar a formatação com R$ e , no lugar de .
+
+#2) O prof usou um módulo chamado moeda.py para confundir, mas fiz usando moeda108.py mesmo.
