@@ -2,13 +2,12 @@
 #Fazer programa importando esse módulo criado e usando as funções.
 from modulos import moeda
 
-n = float(input('Digite um valor em reais: R$ '))
-ta = int(input('Digite uma taxa (em %) de aumento para valor: '))
-td = int(input('Digite qual taxa (em %) de diminuição do valor: '))
+n = float(input('Digite o valor em reais a ser calculado: R$ '))
+ta = float(input('Digite a taxa em % que você deseja aumentar o valor: '))
+td = float(input('Digite a taxa em % que você deseja substrair o valor: '))
 print(moeda.dobro(n))
 print(moeda.metade(n))
 print(moeda.aumentar(n, ta))
 print(moeda.diminuir(n, td))
-print('------')
 
 #ta, td as taxas para o aumentar() e diminuir(). No caso não trabalhei frases no print() porque as fiz nas funções
