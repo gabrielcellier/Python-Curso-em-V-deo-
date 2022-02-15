@@ -21,7 +21,3 @@ def metade(n=0):
 
 def moeda(n=0, moeda='R$'):
     return f'{moeda}{n}'.replace('.', ',')
-
-
-#1)elemento 'moeda=R$' criado apenas para jogar na função, sempre será R$ pois não perguntamos pro usuário sobre ele.
-#2) .replace('.', ',') substituirá tudo nessa frase que tiver '.' por ','
