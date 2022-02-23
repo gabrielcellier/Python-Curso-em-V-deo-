@@ -1,11 +1,11 @@
 from time import sleep
 def aumentar(n=0, t=0):
     sleep(1)
-    return (t + (n * t/100))
+    return (n + (n * t/100))
 
 def diminuir(n=0, t=0):
     sleep(1)
-    return (t - (n * t/100))
+    return (n - (n * t/100))
 
 def dobro(n=0):
     sleep(1)

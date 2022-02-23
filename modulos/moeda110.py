@@ -65,3 +65,23 @@ def moeda(n=0, moeda='R$'):
     :return: Retorna o valor no formato R$XX,XX
     """
     return f'{moeda}{n}'.replace('.', ',')
+
+def resumo(n=0, ta=0, td=0):
+    """
+    Faz uma tabela com resumo de todos as funções e seus cálculos que esse módulo tem.
+    :param n: Valor a ser usado nos cálculos
+    :param ta: Taxa de aumento do valor
+    :param td: Taxa de subtração do valor
+    :return: Tabela com valor analisado, o dobro, metade, aumento e substração em % dado pelo usuário
+    """
+    sleep(1)
+    print('-' * 30)
+    print('Resumo do Valor'.center(30))
+    print('-' * 30)
+    print(f'Preço analisado: {moeda(n)}'.center(30))
+    print('-' * 30)
+    print(f'Dobro do valor: {dobro(n, True)}'.center(30))
+    print(f'Metade do valor: {metade(n, True)}'.center(30))
+    print(f'Aumento de {ta}%: {aumentar(n, ta, True)}'.center(30))
+    print(f'Subtração de {td}%: {diminuir(n, td, True)}'.center(30))
+    print('-' * 30)
