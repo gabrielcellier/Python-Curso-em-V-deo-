@@ -29,7 +29,7 @@ def metade(n=0, formato=False):
     if formato is False:
         return calculo
     if formato is True:
-        return moeda(metade)
+        return moeda(calculo)
 
 def moeda(n=0, moeda='R$'):
     return f'{moeda}{n}'.replace('.', ',')
