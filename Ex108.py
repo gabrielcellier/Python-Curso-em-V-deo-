@@ -11,6 +11,6 @@ print(f'Metade de {moeda.moeda(n)} é {moeda.moeda(moeda.metade(n))}.')
 print(f'O valor {moeda.moeda(n)} acrescido de {ta}% é {moeda.moeda(moeda.aumentar(n, ta))}.')
 print(f'O valor {moeda.moeda(n)} com decréscimo de {td}% é {moeda.moeda(moeda.diminuir(n, td))}.')
 
-#1) O uso do moeda108.moeda() antes das outras funções é para aplicar sua funcionalidade dentro das funções, ou seja,
-#aplicar a formatação com R$ e ',' no lugar de '.'
+#1) O uso do moeda108.moeda() antes das outras funções é para aplicar sua funcionalidade dentro das funções,
+#ou seja, aplicar a formatação com R$ e ',' no lugar de '.'
 #2) O prof usou um módulo chamado moeda.py para confundir, mas fiz usando moeda108.py mesmo.
