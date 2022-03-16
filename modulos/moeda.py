@@ -59,4 +59,30 @@ def diminuir(n=0, t=0, formato=False):
         return moeda(calculo)
 
 def moeda(n=0, moeda='R$'):
+    """
+    Função que serve para colocar R$ e trocar ponto por vírgula na formatação dos valores.
+    :param n: Valor a ser formatado, indicado pelo usuário.
+    :param moeda: Campo usado para colocar o R$
+    :return: Valor formatado usando R$ e vírgula no lugar do ponto.
+    """
     return f'{moeda}{n}'.replace('.',',')
+
+def resumo(n=0, ta=0, td=0):
+    """
+    Faz um resumo de todos os cálculos feitos com o valor dado pelo usuário.
+    :param n: Valor dado pelo usuário.
+    :param ta: Taxa de aumento dada pelo usuário.
+    :param td: Taxa de subtração dada pelo usuário.
+    :return: Resumo com os cálculos de dobro, metade, aumento e diminuição do valor dado pelo usuário.
+    """
+    sleep(1)
+    print('-' * 30)
+    print('Resumo do valor'.center(30))
+    print('-' * 30)
+    print(f'Preço analisado: {moeda(n)}'.center(30))
+    print('-' * 30)
+    print(f'Dobro do valor: {dobro(n, True)}'.center(30))
+    print(f'Metade do valor: {metade(n, True)}'.center(30))
+    print(f'Aumento de {ta}%: {aumentar(n, ta, True)}'.center(30))
+    print(f'Subtraçao de {ta}%: {diminuir(n, td, True)}'.center(30))
+    print('-' * 30)
