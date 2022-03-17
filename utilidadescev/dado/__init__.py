@@ -95,6 +95,8 @@ def leiadinheiro(msg):
             print('Erro! Digite o valor em forma numérica.')
         if numero.strip() == '': #checando se resposta foi vazia
             print('Erro! Preencha o campo com um valor numérico.')
+        if numero.isalnum():
+            print('Erro! Digite o valor somenta em forma numérica.')
         if numero.isnumeric(): #se valor for de fato número, transformar o str em float e retornar ele
             numero = float(numero)
             return numero
