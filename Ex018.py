@@ -1,7 +1,9 @@
 #ao ler um angulo dado calcule seno, cosseno e tangente dele
-import math
-x = float(input('Digite um ângulo: '))
-print('O ângulo de {}° tem: \nseno de {:.2f}° \ncosseno {:.2f}° \ntangente {:.2f}°'
-      .format(x, math.sin(math.radians(x)), math.cos(math.radians(x)), math.tan(math.radians(x))))
-#o numero poderia ser primeiro convertido pra radiano e depois ser feito os cálculos
-#poderia ser criado variáveis para calcular cada ângulo ao invés de fazer no .format()
+from math import sin, cos, tan, radians
+from time import sleep
+print('Digite um ângulo, calcularemos seu seno, cosseno e tangente.')
+sleep(1)
+a = float(input('Digite um ângulo: '))
+sleep(1)
+print(f'O ângulo digitado foi {a}°. Seu seno é {sin(radians(a)):.2f}°, cos é {cos(radians(a)):.2f} '
+      f'e tangente {tan(radians(a)):.2f}.')
