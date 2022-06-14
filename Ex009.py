@@ -1,8 +1,16 @@
 #pegar um numero dado e mostrar sua tabuada
-n = int(input('Digite um valor inteiro para ser feito sua tabuada: '))
-print('A tabuada do valor {} é: 1: {}, 2: {}, 3: {}, 4: {}, 5: {},'
-      ' 6: {}, 7: {}, 8: {}, 9: {} e 10: {}.'
-      .format(n, n*1, n*2, n*3, n*4, n*5, n*6, n*7, n*8, n*9, n*10))
-#poderia colocar cada conta dentro dos {}
-#ou criar uma variável para cada um (mt + trabalho)
-#ou ainda fazer {} x {} = {} .format(n, 2, n*2) ; (n, 3, n*3) e por ai vai
+from time import sleep
+print('Digite um número, mostraremos sua tabuada.')
+x = 1 #contador
+n = int(input('Digite um número inteiro: '))
+sleep(1)
+print('-------------')
+print(f'Tabuada do {n}:')
+while x != 11:  #contador aumenta 1 a cada cálculo, ao chegar a 11 ele para.
+    sleep(0.5)
+    print(f'{n} x {x} = {n*x}') #o próprio contador é utilizado no cálculo.
+    x+=1
+
+#outro método mais simples:
+#print(f'O valor digitado foi {n}. Sua tabuada é 1: {n*1}, 2: {n*2}, 3: {n*3}, 4: {n*4}, 5: {n*5}'
+     #f', 6: {n*6}, 7: {n*7}, 8: {n*8}, 9: {n*9} e 10: {n*10}.')
