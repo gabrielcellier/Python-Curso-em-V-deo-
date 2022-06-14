@@ -1,7 +1,13 @@
 # ler duas notas e mostrar a média delas.
-n1 = float(input('Digite a primeira nota:'))
-n2 = float(input('Digite a segunda nota:'))
-print('A primeira nota é {}, a segunda nota é {}, sendo assim a média é {:.1f}'
-      .format(n1, n2, (n1+n2)/2))
-#também poderia criar uma variável para calcular a média
+from time import sleep
+print('Digite duas notas, iremos calcular a média delas.')
+sleep(0.5)
+n1 = float(input('Digite a primeira nota: '))
+n2 = float(input('Digite a segunda nota: '))
+sleep(0.5)
+print('----------------------')
+print(f'A 1° nota foi {n1}, a 2° nota foi {n2}. A média delas é {((n1+n2)/2):.1f}')
+
+#colocar n1+n2 em () para que essa adição seja feita primeiro, antes da divisão pro 2.
+
 
