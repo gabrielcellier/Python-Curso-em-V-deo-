@@ -1,13 +1,16 @@
 #Ler um nome completo e escrever em minusculo, maiusculo
 #Qt de letras e qt de letras do primeiro nome
-nome = str(input('Digite o nome completo: ')).strip()
-separado = nome.split()
-print ('O nome dado foi {}'
-       '\nO nome todo em minúsculo: {}'
-       '\nO nome todo em maíusculo: {}'
-       '\nO nome ao todo conta com {} letras'
-       '\nO primeiro nome é {} e conta com {} letras ao todo.'
-       .format(nome, nome.lower(), nome.upper(), len(nome) - nome.count(' '), separado[0], len(separado[0])))
-#Para saber a qt de letra do primeiro nome poderia usar nome.find(' ') pois o primeiro espaço só ocorre
-#depois do primeiro nome, como ele aponta qual o ponto que ocorre o espaço e a contagem começa no 0, logo ele apontaria
-#a quantidade de espaços que tem letras.
+from time import sleep
+print('Digite o nome completo, mostraremos variações na sua escrita.')
+sleep(1)
+nome = str(input('Digite o nome completo a seguir: ')).strip()
+separado = nome.split() #separa cada palavra. Usaremos para selecionar só o 1o nome.
+sleep(1)
+print(f'O nome digitado foi: {nome}.'
+      f'\no nome arrumado é: {nome.title()}'
+      f'\no nome todo em maíusculo: {nome.upper()}.'
+      f'\no nome todo em minúsculo: {nome.lower()}.'
+      f'\no nome conta com {len(nome) - nome.count(" ")} letras.'
+      f'\no primeiro nome tem {len(separado[0])}.')
+
+#'- nome.count(" ")' foi usado para substrair os espaços vazios da contagem do len().
