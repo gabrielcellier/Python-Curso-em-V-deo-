@@ -1,9 +1,8 @@
 #Digite o nome da cidade e reconheça se ela começa com a palavra "santo"
-cidade = str(input('Digite o nome da cidade que você nasceu: ')).strip().title()
+cidade = str(input('Digite o nome completo da cidade: ')).strip().title()
 separado = cidade.split()
-print ('O nome da cidade que você nasceu é {}.'
-       '\nEla tem "Santo" no primeiro nome? {}.'
-       '\nO primeiro nome da cidade é "{}" justificando a resposta acima.'
-       .format(cidade, 'Santo' in cidade, separado[0]))
-#poderia fazer (cidade[:5] == 'Santo') no .format(), o :5 se justifica pois a palavra Santo tem 5 caracteres
-#logo ele procuraria se os 5 primeiros caracteres são iguais a 'Santo', poderia usar cidade[0:5] também.
+print(f'O nome da cidade é {cidade}.'
+      f'\nO primeiro nome contém a palavra "Santo"? {"Santo" in separado[0]}.'
+      f'\nA resposta acima se justifica pois a primeira palavra do nome é "{separado[0]}".')
+
+#possível usar cidade[:5] == 'Santo' na segunda frase.
