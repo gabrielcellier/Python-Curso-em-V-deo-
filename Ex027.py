@@ -1,7 +1,11 @@
 #Ler um nome completo e separar o nome e o último sobrenome.
-n = str(input('Digite um nome completo: ')).strip().title()
-nome = n.split()
-print ('O primeiro nome digitado foi {} e o último foi {}.'.format(nome[0], nome[-1]))
-#no split nome[0] é o primeiro conjunto e o [-1] sempre será o último
-#Como o nome nao é utilizado, o .split() poderia ser colocado junto a variavel n após o .title()
+from time import sleep
+print('Digite um nome completo. Iremos separar o nome e o último sobrenome.')
+sleep(1)
+nome = str(input('Digite o nome completo: ')).strip().title()
+separado = nome.split()
+sleep(1)
+print(f'O nome digitado foi {nome}.'
+      f'\n O primeiro nome é {separado[0]} e o último sobrenome é {separado[-1]}.')
+#[-1] foi usado pois sempre buscará o último item da lista criada pelo .split()
 
