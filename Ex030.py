@@ -1,7 +1,9 @@
 #Ler um número dado e avisar se ele é par ou ímpar
-num = int(input('Digite um número qualquer: '))
-conta = num % 2
-if conta == 0:
-    print ('O número digitado {} é par'.format(num))
+from time import sleep
+print('Digite um número, vamos descobrir se ele é par ou ímpar.')
+sleep(0.5)
+numero = float(input('Digite um número: '))
+if numero % 2 == 0:
+    print(f'O número digitado foi {numero} e ele é par.')
 else:
-    print ('O número digitado {} é ímpar.'.format(num))
+    print(f'O número digitado foi {numero} e ele é ímpar.')
