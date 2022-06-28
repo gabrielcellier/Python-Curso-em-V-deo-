@@ -1,10 +1,13 @@
 #Ler um ano e avisar se ele é bissexto
-ano = int(input('Digite um ano para saber se ele é bissexto: '))
-c1 = ano % 4
-c2 = c1 % 100
-c3 = c2 % 400
-if c3 == 0:
-    print ('O ano de {} é um ano bissexto.'.format(ano))
+from time import sleep
+print('Digite um ano, vamos dizer se ele é bissexto ou não.')
+sleep(1)
+ano = int(input('Digite o ano: '))
+c1 = (((ano % 4) % 100) % 400) #poderia fazer os 3 cálculos em váriaveis diferentes
+sleep(0.5)
+if c1 == 0:
+    print(f'O ano digitado foi {ano}, ele é um ano bissexto.')
 else:
-    print ('O ano de {} não é um ano bissexto.'.format(ano))
+    print(f'O ano digitado foi {ano}, ele não é um ano bissexto.')
+
 

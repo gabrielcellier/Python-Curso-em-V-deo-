@@ -1,8 +1,10 @@
 #Perguntar distancia de uma viagem, até 200km cobrar 0,50 por km, acima de 200km cobrar 0,45
-km = int(input('Digite a distância total da viagem (em km): '))
-print ('A viagem custa R$0,50/km até 200 km, a partir disso custa R$0,45/km')
-if km > 200:
-    print ('A viagem custará R${:.2f} pois sua km total é de {}km.'.format(km * 0.45, km))
+from time import sleep
+print('Calcularemos o custo da viagem. Até 200 km de distância custa R$0,50 por km rodado.'
+      '\nAcima de 200 km rodados o km custará R$0,45.')
+dist = float(input('Qual a distância total da viagem? Digitar em km. '))
+sleep(1)
+if dist > 200:
+    print(f'A viagem será de {dist:.1f} km, custará R$ {(dist * 0.45):.2f} (R$0,45 por km).')
 else:
-    print ('A viagem custará R${:.2f} pois sua km total é de {}km.'.format(km * 0.50, km))
-#é possível fazer só a conta dentro do if..else e deixar o print no fim com a variável usada no if else
+    print(f'A viagem será de {dist:.1f} km, custará ao todo R$ {(dist * 0.50):.2f} (R$0,50 por km).')
