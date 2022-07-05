@@ -5,6 +5,7 @@ from time import sleep
 print('Responda o ano de nascimento, informaremos se já está na hora de participar do alistamento.')
 sleep(0.5)
 ano = int(input('Digite o ano de nascimento: '))
+sleep(1)
 hoje = date.today().year
 idade = hoje - ano
 if idade == 18:
