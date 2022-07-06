@@ -1,16 +1,36 @@
 #crie um programa pro computador jogar pedra, papel e tesoura com você.
+from time import sleep
 from random import choice
-print ('''Escolha uma das opções a seguir: [1]: pedra, [2]: papel ou [3]: tesoura''')
-escolha = int(input('Digite o código da sua escolha: '))
+user = 0
+print('Jogo de pedra, papel e tesoura. Escolha o código referente a sua escolha e você jogará contra o computador.')
+sleep(1)
+print('''Faça sua escolha:
+[ 1 ] Pedra
+[ 2 ] Papel
+[ 3 ] Tesoura''')
+while True:
+    esc = int(input('Digite o código da sua escolha: '))
+    sleep(1)
+    if esc == 1:
+        print('Você escolheu PEDRA. Boa sorte.')
+        user = 'pedra'
+        break
+    if esc == 2:
+        print('Você escolheu PAPEL. Boa sorte.')
+        user = 'papel'
+        break
+    if esc == 3:
+        print('Você escolheu TESOURA. Boa sorte.')
+        user = 'tesoura'
+        break
+    else:
+        print(f'Código digitado foi {esc}. Esse código é inválido. Digite um código válido.')
 computador = ['pedra', 'papel', 'tesoura']
-sorteio = choice(computador)
-if escolha == 1 and sorteio == 'tesoura':
-    print ('O jogador venceu pois escolheu pedra o computador escolheu papel')
-elif escolha == 2 and sorteio == 'pedra':
-    print ('O jogador venceu pois escolheu papel e o computador escolheu pedra')
-elif escolha == 3 and sorteio == 'papel':
-    print ('O jogador venceu pois escolheu tesoura e o computador escolheu papel')
-elif escolha == 1 and sorteio == 'pedra' or escolha == 2 and sorteio 'papel' or escolha == 3 and sorteio 'tesoura':
-    print ('Deu empate pois jogador e computador fizeram a mesma escolha.')
+escolha = choice(computador)
+sleep(1)
+if esc == 1 and escolha == 'pedra' or esc == 2 and escolha == 'papel' or esc == 3 and escolha == 'tesoura':
+    print(f'TEMOS UM EMPATE! Ambos escolheram {escolha}.')
+if esc == 1 and escolha == 'tesoura' or esc == 2 and escolha == 'pedra' or esc == 3 and escolha == 'papel':
+    print(f'VOCÊ VENCEU! Pois o computador escolheu {escolha} e você escolheu {user}.')
 else:
-    print ('O computador venceu pois escolheu {}, batendo a escolha do jogador')
+    print(f'VOCÊ PERDEU! Pois o computador escolheu {escolha} e você escolheu {user}')
