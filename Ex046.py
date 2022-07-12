@@ -4,3 +4,4 @@ print('Vamos fazer contagem regressiva de 10 a 0, diminuindo 1 número a cada se
 for c in range(10, -1, -1):
     print(c)
     sleep(1)
+print('Contagem terminada.')
