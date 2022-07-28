@@ -25,7 +25,7 @@ for c in range (1, 5):
             print('Valor inválido. Digite uma idade com número inteiro.')
             sleep(1)
     while True:
-        sexo = input('Digite o sexo da pessoa (m/f): ').strip().lower()
+        sexo = input('Digite o sexo da pessoa (m/f): ').strip().lower()[0]
         if sexo in 'mf' and len(sexo) == 1:
             sexo = str(sexo)
             sleep(0.5)
