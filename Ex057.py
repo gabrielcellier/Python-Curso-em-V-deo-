@@ -7,6 +7,6 @@ while sexo not in 'mf':
     sexo = str(input('Resposta inválida. Digite o sexo ("m" ou "f"): ')).strip().lower()[0]
     sleep(0.5)
 if sexo in 'm':
-    print('A resposta dada foi "m" logo o sexo é masculino.')
+    print('A resposta foi "m" logo o sexo é masculino.')
 elif sexo in 'f':
-    print('A resposta dada foi "f" logo o sexo é feminino.')
+    print('A resposta foi "f" logo o sexo é feminino.')
