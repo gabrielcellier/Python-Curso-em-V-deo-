@@ -29,5 +29,5 @@ if t == 1:
                   print('Erro. Digite um valor válido (número inteiro).')
 if t == 2:
       n = float(input('Digite um número decimal: '))
-      print(f'O valor digitado foi {n.2f}. Seu dobro é {(n*2).2f}, o triplo é {(n*3).2f}'
-            f' e sua raíz quadrada {(n**2).2f}.')
+      print(f'O valor digitado foi {n:.2f}. Seu dobro é {(n*2):.2f}, o triplo é {(n*3):.2f}'
+            f' e sua raíz quadrada {(n**2):.2f}.')
