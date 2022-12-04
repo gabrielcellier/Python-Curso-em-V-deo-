@@ -1,16 +1,25 @@
 #Sorteio entre 4 nomes de alunos dados, lendo o nome e sorteando um deles
-from random import choice
 from time import sleep
-print('Escreva nome de quatro alunos, vamos sortear um deles.')
+from random import choice
+qtalunos = 0
+lista = []
+print('Escreva nome de quatro alunos. Iremos sortear um dos nomes escritos.')
 sleep(1)
-a1 = str(input('Digite o primeiro nome: ')).strip().capitalize()
-a2 = str(input('Digite o segundo nome: ')).strip().capitalize()
-a3 = str(input('Digite o terceiro nome: ')).strip().capitalize()
-a4 = str(input('Digite o quarto nome: ')).strip().capitalize()
-lista = [a1, a2, a3, a4]
+while qtalunos < 4:
+    nome = input(f'Digite o nome do {qtalunos + 1}° aluno: ').strip().capitalize()
+    if nome.isalpha():
+        nome = str(nome)
+        lista.append(nome)
+        qtalunos += 1
+    else:
+        print('Nome inválido. Digite um nome apenas usando letras.')
 sleep(1)
-print(f'O nome sorteado foi {choice(lista)}.')
-#.choice() é usado para selecionar randomicamente um item de uma lista
+print('Sorteando um dos nomes escritos....')
+sleep(2)
+print(f'O nome sorteado da lista foi {choice(lista)}.')
+
+
+
 
 
 
