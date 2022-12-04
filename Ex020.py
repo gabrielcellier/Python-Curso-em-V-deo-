@@ -1,13 +1,18 @@
 #Ler 4 nomes e sortear uma ordem entre os nomes dados
-from random import shuffle
 from time import sleep
-print('Digite quatro nomes, sortearemos uma ordem entre os nomes.')
+from random import shuffle
+print('Digite quatro nomes. Iremos criar uma lista com eles em ordem aleatória.')
+qtnomes = 0
+lista = []
+while qtnomes < 4:
+    nomes = input(f'Digite o {qtnomes+1}° nome: ').strip().capitalize()
+    if nomes.isalpha():
+        nomes = str(nomes)
+        lista.append(nomes)
+        qtnomes += 1
+    else:
+        print('Erro. Tente novamente. Lembrando que só aceitamos letras.')
+        sleep(0.5)
 sleep(1)
-a1 = str(input('Digite o primeiro nome: ')).strip().capitalize()
-a2 = str(input('Digite o segundo nome: ')).strip().capitalize()
-a3 = str(input('Digite o terceiro nome: ')).strip().capitalize()
-a4 = str(input('Digite o quarto nome: ')).strip().capitalize()
-lista = [a1, a2, a3, a4]
 shuffle(lista)
-sleep(1)
-print(f'A ordem sorteada entre os nomes digitados é: {lista}')
+print(f'A lista com ordem aleatória dos nomes digitados é: {lista}.')
